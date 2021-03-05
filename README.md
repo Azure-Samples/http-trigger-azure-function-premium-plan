@@ -3,7 +3,7 @@ services: azure, azure-functions, azure-storage, azure-blob-storage, azure-appli
 platforms: dotnet-core, aspnet-core
 ---
 
-# Call an HTTP-triggered Azure Function via a Private Endpoint
+# Call an HTTP-triggered Azure Function using a Private Endpoint
 
 ![Build .NET Core](https://github.com/Azure-Samples/http-trigger-azure-function-premium-plan/workflows/.NET%20Core/badge.svg)
 
@@ -14,7 +14,7 @@ For more information on how to use Azure Private Endpoints to let Azure Web App 
 - [Using Private Endpoints for Azure Web App](https://docs.microsoft.com/en-us/azure/app-service/networking/private-endpoint).
 - [Create an App Service app and deploy a private endpoint by using an Azure Resource Manager template](https://docs.microsoft.com/en-us/azure/app-service/scripts/template-deploy-private-endpoint).
 
-For a similar sample with a non-HTTP-triggered Azure Function, see [Azure Functions, Private Endpoints, and NAT Gateway](https://github.com/paolosalvatori/azure-function-premium-plan). 
+For a similar sample with a non-HTTP-triggered Azure Function, see [Azure Functions, Private Endpoints, and NAT Gateway](https://github.com/Azure-Samples/non-http-trigger-azure-functions-premium-plan). 
 
 ## Deploy to Azure
 
