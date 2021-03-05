@@ -5,7 +5,7 @@ platforms: dotnet-core, aspnet-core
 
 # Call an HTTP-triggered Azure Function via a Private Endpoint
 
-![Build .NET Core](https://github.com/paolosalvatori/azure-functions-private-endpoint-http-trigger/workflows/.NET%20Core/badge.svg)
+![Build .NET Core](https://github.com/Azure-Samples/http-trigger-azure-function-premium-plan/workflows/.NET%20Core/badge.svg)
 
 This sample shows how to call an [HTTP-triggered Azure Function](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook-trigger?tabs=csharp) using [Azure Private Endpoints](https://docs.microsoft.com/azure/private-link/private-endpoint-overview). The Azure Functions app is hosted in [Azure Functions Premium Plan](https://docs.microsoft.com/en-us/azure/azure-functions/functions-premium-plan?tabs=portal) with [Regional VNET Integration](https://docs.microsoft.com/en-us/azure/app-service/web-sites-integrate-with-vnet#regional-vnet-integration). In addition, the sample demonstrates how to use the [Azure NAT Gateway](https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway-resource) to handle outbound connections from the Azure Functions app when this makes a large number of calls to external services. 
 
