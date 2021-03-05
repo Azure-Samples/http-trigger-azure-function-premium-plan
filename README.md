@@ -3,7 +3,7 @@ services: azure, azure-functions, azure-storage, azure-blob-storage, azure-appli
 platforms: dotnet-core, aspnet-core
 ---
 
-# Call an HTTP trigger Azure Function via a Private Endpoint
+# Call an HTTP-triggered Azure Function via a Private Endpoint
 
 ![Build .NET Core](https://github.com/paolosalvatori/azure-functions-private-endpoint-http-trigger/workflows/.NET%20Core/badge.svg)
 
