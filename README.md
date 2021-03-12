@@ -1,25 +1,17 @@
 ---
 page_type: sample
 languages:
-- al-language
 - aspx-csharp
-- bash
 products:
 - azure
 - aspnet-core
-- dotnet-core
-- azure-application-insights
-- azure-app-service
-- azure-blob-storage
 - azure-storage-accounts
 - azure-cosmos-db
 - azure-functions
 - azure-log-analytics
-- azure-nat-gateway
 - azure-virtual-machines
-- vs-code
 name: Call an HTTP-triggered Azure Function using a Private Endpoint
-description: This sample shows how to call an HTTP-triggered Azure Function using Azure Private Endpoints. The Azure Functions app is hosted in Azure Functions Premium Plan with Regional VNET Integration. In addition, the sample demonstrates how to use the Azure NAT Gateway to handle outbound connections from the Azure Functions app when this makes a large number of calls to external services.
+description: This sample shows how to use an Azure Private Endpoint to call an HTTP-triggered Azure Function hosted in a Premium Plan with Regional VNET Integration. The sample also demonstrates how to use the Azure NAT Gateway to handle outbound connections.
 urlFragment: http-trigger-azure-function-premium-plan
 azureDeploy: https://raw.githubusercontent.com/Azure-Samples/http-trigger-azure-function-premium-plan/main/templates/azuredeploy.json
 ---
