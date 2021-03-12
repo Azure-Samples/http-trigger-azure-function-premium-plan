@@ -19,7 +19,7 @@ products:
 - azure-log-analytics
 - azure-virtual-machines
 - vs-code
-name: Call an HTTP-triggered Azure Function using a Private Endpoint
+name: "Call an HTTP-triggered Azure Function using a Private Endpoint"
 description: "This sample shows how to use a Private Endpoint to call an HTTP-triggered Azure Function hosted in a Premium Plan with Regional VNET Integration and how to use the Azure NAT Gateway for outbound connections."
 urlFragment: "http-trigger-azure-function-premium-plan"
 azureDeploy: "https://raw.githubusercontent.com/Azure-Samples/http-trigger-azure-function-premium-plan/main/templates/azuredeploy.json"
