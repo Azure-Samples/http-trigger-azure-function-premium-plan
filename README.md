@@ -1,11 +1,32 @@
 ---
-services: azure, azure-functions, azure-storage, azure-blob-storage, azure-application-insights, azure-bastion, azure-cosmos-db, azure-dns, app-service, azure-monitor, service-bus-messaging, storage, virtual-network, azure-private-link, azure-resource-manager,  azure-virtual-machines-windows, azure-virtual-network, dotnet-core, vs-code
-platforms: dotnet-core, aspnet-core
+page_type: sample
+languages:
+- al-language
+- aspx-csharp
+- bash
+products:
+- azure
+- aspnet-core
+- dotnet-core
+- azure-application-insights
+- azure-app-service
+- azure-blob-storage
+- azure-storage-accounts
+- azure-cosmos-db
+- azure-functions
+- azure-log-analytics
+- azure-nat-gateway
+- azure-virtual-machines
+- vs-code
+name: Call an HTTP-triggered Azure Function using a Private Endpoint
+description: This sample shows how to call an HTTP-triggered Azure Function using Azure Private Endpoints. The Azure Functions app is hosted in Azure Functions Premium Plan with Regional VNET Integration. In addition, the sample demonstrates how to use the Azure NAT Gateway to handle outbound connections from the Azure Functions app when this makes a large number of calls to external services.
+urlFragment: http-trigger-azure-function-premium-plan
+azureDeploy: https://raw.githubusercontent.com/Azure-Samples/http-trigger-azure-function-premium-plan/main/templates/azuredeploy.json
 ---
 
-# Call an HTTP-triggered Azure Function using a Private Endpoint
+# Call an HTTP Azure Function using a Private Endpoint
 
-![Build .NET Core](https://github.com/Azure-Samples/http-trigger-azure-function-premium-plan/workflows/.NET%20Core/badge.svg)
+![Build .NET Core](https://github.com/paolosalvatori/azure-functions-private-endpoint-http-trigger/workflows/.NET%20Core/badge.svg)
 
 This sample shows how to call an [HTTP-triggered Azure Function](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook-trigger?tabs=csharp) using [Azure Private Endpoints](https://docs.microsoft.com/azure/private-link/private-endpoint-overview). The Azure Functions app is hosted in [Azure Functions Premium Plan](https://docs.microsoft.com/en-us/azure/azure-functions/functions-premium-plan?tabs=portal) with [Regional VNET Integration](https://docs.microsoft.com/en-us/azure/app-service/web-sites-integrate-with-vnet#regional-vnet-integration). In addition, the sample demonstrates how to use the [Azure NAT Gateway](https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway-resource) to handle outbound connections from the Azure Functions app when this makes a large number of calls to external services. 
 
@@ -14,7 +35,7 @@ For more information on how to use Azure Private Endpoints to let Azure Web App 
 - [Using Private Endpoints for Azure Web App](https://docs.microsoft.com/en-us/azure/app-service/networking/private-endpoint).
 - [Create an App Service app and deploy a private endpoint by using an Azure Resource Manager template](https://docs.microsoft.com/en-us/azure/app-service/scripts/template-deploy-private-endpoint).
 
-For a similar sample with a non-HTTP-triggered Azure Function, see [Azure Functions, Private Endpoints, and NAT Gateway](https://github.com/Azure-Samples/non-http-trigger-azure-functions-premium-plan). 
+For a similar sample with a non-HTTP-triggered Azure Function, see [Azure Functions, Private Endpoints, and NAT Gateway](https://github.com/paolosalvatori/azure-function-premium-plan). 
 
 ## Deploy to Azure
 
