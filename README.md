@@ -50,7 +50,7 @@ The following picture shows the architecture and network topology of the sample.
 
 ![Architecture](images/architecture.png)
 
-The ARM template deploys the following resources:
+The ARM template deploys the following resources to the target resource group:
 
 - Virtual Network: this virtual network is composed of the following subnets:
   - **FunctionSubnet**: this subnet is used for the regional VNET integration with the Azure Function app hosted by a Premium Plan. For more information, see [Tutorial: integrate Functions with an Azure virtual network](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-vnet)
