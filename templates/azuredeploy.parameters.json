@@ -1,0 +1,98 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "functionAppName": {
+            "value": "LeoNatGw"
+        },
+        "hostingPlanName": {
+            "value": "LeoNatGwServicePlan"
+        },
+        "workspaceName": {
+            "value": "LeoNatGwLogAnalytics"
+        },
+        "workspaceSku": {
+            "value": "PerGB2018"
+        },
+        "virtualNetworkName": {
+            "value": "LeoNatGwVNet"
+        },
+        "virtualNetworkAddressPrefix": {
+            "value": "10.0.0.0/16"
+        },
+        "functionSubnetName": {
+            "value": "FunctionSubnet"
+        },
+        "privateEndpointSubnetName": {
+            "value": "PrivateEndpointSubnet"
+        },
+        "virtualMachineSubnetName": {
+            "value": "VirtualMachineSubnet"
+        },
+        "bastionSubnetName": {
+            "value": "AzureBastionSubnet"
+        },
+        "functionSubnetAddressPrefix": {
+            "value": "10.0.0.0/24"
+        },
+        "privateEndpointSubnetAddressPrefix": {
+            "value": "10.0.1.0/24"
+        },
+        "virtualMachineSubnetAddressPrefix": {
+            "value": "10.0.2.0/24"
+        },
+        "bastionSubnetAddressPrefix": {
+            "value": "10.0.3.0/27"
+        },
+        "vmName": {
+            "value": "TestVm"
+        },
+        "vmSize": {
+            "value": "Standard_F4s_v2"
+        },
+        "imagePublisher": {
+            "value": "MicrosoftWindowsDesktop"
+        },
+        "imageOffer": {
+            "value": "Windows-10"
+        },
+        "imageSku": {
+            "value": "rs5-pro"
+        },
+        "adminUsername": {
+            "value": "azadmin"
+        },
+        "adminPasswordOrKey": {
+            "reference": {
+                "keyVault": {
+                    "id": "/subscriptions/1a45a694-ae23-4650-9774-89a571c462f6/resourceGroups/BaboKeyVaultResourceGroup/providers/Microsoft.KeyVault/vaults/BaboKeyVault"
+                },
+                "secretName": "vmAdminPasswordOrKey"
+            }
+        },
+        "diskStorageAccounType": {
+            "value": "Premium_LRS"
+        },
+        "numDataDisks": {
+            "value": 1
+        },
+        "osDiskSize": {
+            "value": 127
+        },
+        "dataDiskSize": {
+            "value": 50
+        },
+        "dataDiskCaching": {
+            "value": "ReadWrite"
+        },
+        "cosmosDbAccountName": {
+            "value": "LeoRequests"
+        },
+        "cosmosDbDatabaseName": {
+            "value": "Repository"
+        },
+        "cosmosDbContainerName": {
+            "value": "Requests"
+        }
+    }
+}
