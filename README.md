@@ -9,7 +9,7 @@ products:
 - azure-blob-storage
 - azure-storage-accounts
 - azure-bastion
-- azure-application-insights
+- azure-monitor
 - azure-dns
 - azure-private-link
 - azure-virtual-network
